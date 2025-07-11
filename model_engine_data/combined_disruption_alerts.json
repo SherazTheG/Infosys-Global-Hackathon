@@ -1,0 +1,172 @@
+[
+  {
+    "timestamp": "2025-07-11 21:22:43.254417",
+    "latitude": 13.085,
+    "longitude": 80.2101,
+    "disruption_type": "protest",
+    "confidence": 0.6943915486335754,
+    "location_name": "Anna Nagar",
+    "description": "Protest happening near Anna Nagar causing road closures",
+    "source": "twitter"
+  },
+  {
+    "timestamp": "2025-07-11 21:07:43.254417",
+    "latitude": 12.8956,
+    "longitude": 80.2267,
+    "disruption_type": "construction",
+    "confidence": 0.8549225330352783,
+    "location_name": "Omr",
+    "description": "Construction work on OMR causing major delays.",
+    "source": "twitter"
+  },
+  {
+    "timestamp": "2025-07-11 20:52:43.254417",
+    "latitude": 13.0569,
+    "longitude": 80.2412,
+    "disruption_type": "road closure",
+    "confidence": 0.518146276473999,
+    "location_name": "Mount Road",
+    "description": "Emergency vehicles blocking Mount Road. Traffic moving slowly",
+    "source": "twitter"
+  },
+  {
+    "timestamp": "2025-07-11 21:37:53.312098",
+    "latitude": 13.0418,
+    "longitude": 80.2341,
+    "disruption_type": "low traffic speed",
+    "forecast_speed": 6.858603024074413,
+    "road_segment": "nungambakkam - t.nagar",
+    "description": "Predicted slow traffic on nungambakkam - t.nagar (6.9 km/h)",
+    "source": "forecast"
+  },
+  {
+    "timestamp": "2025-07-11 21:37:53.312098",
+    "latitude": 13.045,
+    "longitude": 80.215,
+    "disruption_type": "low traffic speed",
+    "forecast_speed": 8.47779580317641,
+    "road_segment": "anna nagar - adyar",
+    "description": "Predicted slow traffic on anna nagar - adyar (8.5 km/h)",
+    "source": "forecast"
+  },
+  {
+    "timestamp": "2025-07-11 21:37:53.312098",
+    "latitude": 12.935,
+    "longitude": 80.224,
+    "disruption_type": "low traffic speed",
+    "forecast_speed": 5.216655202631324,
+    "road_segment": "velachery - omr",
+    "description": "Predicted slow traffic on velachery - omr (5.2 km/h)",
+    "source": "forecast"
+  },
+  {
+    "timestamp": "2025-07-01 11:00:00",
+    "latitude": 13.0569,
+    "longitude": 80.2412,
+    "disruption_type": "delivery delay anomaly",
+    "delay_minutes": 30.81,
+    "route_name": "Nungambakkam to T.Nagar",
+    "coordinate_type": "start",
+    "description": "Delay anomaly: 30.81 min",
+    "source": "anomaly"
+  },
+  {
+    "timestamp": "2025-07-01 11:00:00",
+    "latitude": 13.0418,
+    "longitude": 80.2341,
+    "disruption_type": "delivery delay anomaly",
+    "delay_minutes": 30.81,
+    "route_name": "Nungambakkam to T.Nagar",
+    "coordinate_type": "end",
+    "description": "Delay anomaly: 30.81 min",
+    "source": "anomaly"
+  },
+  {
+    "timestamp": "2025-07-01 18:00:00",
+    "latitude": 13.0569,
+    "longitude": 80.2412,
+    "disruption_type": "delivery delay anomaly",
+    "delay_minutes": 45.12,
+    "route_name": "Nungambakkam to T.Nagar",
+    "coordinate_type": "start",
+    "description": "Delay anomaly: 45.12 min",
+    "source": "anomaly"
+  },
+  {
+    "timestamp": "2025-07-01 18:00:00",
+    "latitude": 13.0418,
+    "longitude": 80.2341,
+    "disruption_type": "delivery delay anomaly",
+    "delay_minutes": 45.12,
+    "route_name": "Nungambakkam to T.Nagar",
+    "coordinate_type": "end",
+    "description": "Delay anomaly: 45.12 min",
+    "source": "anomaly"
+  },
+  {
+    "timestamp": "2025-07-01 19:00:00",
+    "latitude": 13.0569,
+    "longitude": 80.2412,
+    "disruption_type": "delivery delay anomaly",
+    "delay_minutes": 50.85,
+    "route_name": "Nungambakkam to T.Nagar",
+    "coordinate_type": "start",
+    "description": "Delay anomaly: 50.85 min",
+    "source": "anomaly"
+  },
+  {
+    "timestamp": "2025-07-01 19:00:00",
+    "latitude": 13.0418,
+    "longitude": 80.2341,
+    "disruption_type": "delivery delay anomaly",
+    "delay_minutes": 50.85,
+    "route_name": "Nungambakkam to T.Nagar",
+    "coordinate_type": "end",
+    "description": "Delay anomaly: 50.85 min",
+    "source": "anomaly"
+  },
+  {
+    "timestamp": "2025-07-01 18:00:00",
+    "latitude": 12.9816,
+    "longitude": 80.2209,
+    "disruption_type": "delivery delay anomaly",
+    "delay_minutes": 29.72,
+    "route_name": "Velachery to OMR",
+    "coordinate_type": "start",
+    "description": "Delay anomaly: 29.72 min",
+    "source": "anomaly"
+  },
+  {
+    "timestamp": "2025-07-01 18:00:00",
+    "latitude": 12.8956,
+    "longitude": 80.2267,
+    "disruption_type": "delivery delay anomaly",
+    "delay_minutes": 29.72,
+    "route_name": "Velachery to OMR",
+    "coordinate_type": "end",
+    "description": "Delay anomaly: 29.72 min",
+    "source": "anomaly"
+  },
+  {
+    "timestamp": "2025-07-01 20:00:00",
+    "latitude": 12.9816,
+    "longitude": 80.2209,
+    "disruption_type": "delivery delay anomaly",
+    "delay_minutes": 34.67,
+    "route_name": "Velachery to OMR",
+    "coordinate_type": "start",
+    "description": "Delay anomaly: 34.67 min",
+    "source": "anomaly"
+  },
+  {
+    "timestamp": "2025-07-01 20:00:00",
+    "latitude": 12.8956,
+    "longitude": 80.2267,
+    "disruption_type": "delivery delay anomaly",
+    "delay_minutes": 34.67,
+    "route_name": "Velachery to OMR",
+    "coordinate_type": "end",
+    "description": "Delay anomaly: 34.67 min",
+    "source": "anomaly"
+  }
+]
