@@ -1,0 +1,32 @@
+[
+  {
+    "timestamp": "2025-07-11 14:47:17.050082",
+    "latitude": 13.085,
+    "longitude": 80.2101,
+    "disruption_type": "protest",
+    "confidence": 0.705769956111908,
+    "location_name": "Anna Nagar",
+    "description": "Protest happening near Anna Nagar causing road closures #ChennaiTraffic",
+    "tweet_id": "2"
+  },
+  {
+    "timestamp": "2025-07-11 14:32:17.050082",
+    "latitude": 12.8956,
+    "longitude": 80.2267,
+    "disruption_type": "construction",
+    "confidence": 0.7668026685714722,
+    "location_name": "Omr",
+    "description": "Construction work on OMR causing major delays. Take alternate route",
+    "tweet_id": "3"
+  },
+  {
+    "timestamp": "2025-07-11 14:17:17.050082",
+    "latitude": 13.0569,
+    "longitude": 80.2412,
+    "disruption_type": "road closure",
+    "confidence": 0.518146276473999,
+    "location_name": "Mount Road",
+    "description": "Emergency vehicles blocking Mount Road. Traffic moving slowly",
+    "tweet_id": "4"
+  }
+]

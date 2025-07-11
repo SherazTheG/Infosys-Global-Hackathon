@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5198f312aaa6793d154198d9dfe4ca1c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5198f312aaa6793d154198d9dfe4ca1c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5198f312aaa6793d154198d9dfe4ca1c = L.map(
+                "map_5198f312aaa6793d154198d9dfe4ca1c",
+                {
+                    center: [13.0827, 80.2707],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_12ce1a8a56e0d520534bb776c4ce43b7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_12ce1a8a56e0d520534bb776c4ce43b7.addTo(map_5198f312aaa6793d154198d9dfe4ca1c);
+        
+    
+            var marker_cluster_7ea96492bfbca67ff700e21e1b337994 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var circle_marker_83a09a6a40129e3ab796e80f6d093123 = L.circleMarker(
+                [13.0569, 80.2412],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ea96492bfbca67ff700e21e1b337994);
+        
+    
+        var popup_17a280e35e64cc69e59e07efca4394f6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5a87708f25213e541878b88ece471059 = $(`<div id="html_5a87708f25213e541878b88ece471059" style="width: 100.0%; height: 100.0%;">             <b>Route:</b> Nungambakkam to T.Nagar<br>             <b>Type:</b> start<br>             <b>Delay:</b> 20.2 min<br>             <b>Confidence:</b> 1.00<br>             <b>Description:</b> Anomalous delivery delay detected: 20.2 minutes             </div>`)[0];
+                popup_17a280e35e64cc69e59e07efca4394f6.setContent(html_5a87708f25213e541878b88ece471059);
+            
+        
+
+        circle_marker_83a09a6a40129e3ab796e80f6d093123.bindPopup(popup_17a280e35e64cc69e59e07efca4394f6)
+        ;
+
+        
+    
+    
+            var circle_marker_91ae2b96c8f49dab982b8002f8b0fc40 = L.circleMarker(
+                [13.0418, 80.2341],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ea96492bfbca67ff700e21e1b337994);
+        
+    
+        var popup_10176d065320a08f5ffba440d2892e9e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_56af51f754278fc9781626c65530287a = $(`<div id="html_56af51f754278fc9781626c65530287a" style="width: 100.0%; height: 100.0%;">             <b>Route:</b> Nungambakkam to T.Nagar<br>             <b>Type:</b> end<br>             <b>Delay:</b> 20.2 min<br>             <b>Confidence:</b> 1.00<br>             <b>Description:</b> Anomalous delivery delay detected: 20.2 minutes             </div>`)[0];
+                popup_10176d065320a08f5ffba440d2892e9e.setContent(html_56af51f754278fc9781626c65530287a);
+            
+        
+
+        circle_marker_91ae2b96c8f49dab982b8002f8b0fc40.bindPopup(popup_10176d065320a08f5ffba440d2892e9e)
+        ;
+
+        
+    
+    
+            var circle_marker_f351ccb14bf0f847ba819efeff53dacd = L.circleMarker(
+                [13.0569, 80.2412],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ea96492bfbca67ff700e21e1b337994);
+        
+    
+        var popup_fcfce9fd995e02d114ba4e64a388af0f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1ebdb29c4135ba01a8fdd58ec57cf323 = $(`<div id="html_1ebdb29c4135ba01a8fdd58ec57cf323" style="width: 100.0%; height: 100.0%;">             <b>Route:</b> Nungambakkam to T.Nagar<br>             <b>Type:</b> start<br>             <b>Delay:</b> 9.1 min<br>             <b>Confidence:</b> 0.50<br>             <b>Description:</b> Anomalous delivery delay detected: 9.1 minutes             </div>`)[0];
+                popup_fcfce9fd995e02d114ba4e64a388af0f.setContent(html_1ebdb29c4135ba01a8fdd58ec57cf323);
+            
+        
+
+        circle_marker_f351ccb14bf0f847ba819efeff53dacd.bindPopup(popup_fcfce9fd995e02d114ba4e64a388af0f)
+        ;
+
+        
+    
+    
+            var circle_marker_5ff97db2db5ee41b99a3ca70a8c6319d = L.circleMarker(
+                [13.0418, 80.2341],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ea96492bfbca67ff700e21e1b337994);
+        
+    
+        var popup_b1813469352661f84a281b33db164cbb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9845fccb15bf65e0e5944509b076235f = $(`<div id="html_9845fccb15bf65e0e5944509b076235f" style="width: 100.0%; height: 100.0%;">             <b>Route:</b> Nungambakkam to T.Nagar<br>             <b>Type:</b> end<br>             <b>Delay:</b> 9.1 min<br>             <b>Confidence:</b> 0.50<br>             <b>Description:</b> Anomalous delivery delay detected: 9.1 minutes             </div>`)[0];
+                popup_b1813469352661f84a281b33db164cbb.setContent(html_9845fccb15bf65e0e5944509b076235f);
+            
+        
+
+        circle_marker_5ff97db2db5ee41b99a3ca70a8c6319d.bindPopup(popup_b1813469352661f84a281b33db164cbb)
+        ;
+
+        
+    
+    
+            var circle_marker_8f422fa0c0daf6d0da775ba1e775f2fc = L.circleMarker(
+                [13.0569, 80.2412],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ea96492bfbca67ff700e21e1b337994);
+        
+    
+        var popup_f856e72649277bddb6932a2b653455c0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_34270b314bcbe00b0e4f11e421b327cd = $(`<div id="html_34270b314bcbe00b0e4f11e421b327cd" style="width: 100.0%; height: 100.0%;">             <b>Route:</b> Nungambakkam to T.Nagar<br>             <b>Type:</b> start<br>             <b>Delay:</b> 21.2 min<br>             <b>Confidence:</b> 1.00<br>             <b>Description:</b> Anomalous delivery delay detected: 21.2 minutes             </div>`)[0];
+                popup_f856e72649277bddb6932a2b653455c0.setContent(html_34270b314bcbe00b0e4f11e421b327cd);
+            
+        
+
+        circle_marker_8f422fa0c0daf6d0da775ba1e775f2fc.bindPopup(popup_f856e72649277bddb6932a2b653455c0)
+        ;
+
+        
+    
+    
+            var circle_marker_cc844705d4c53e685e33369246ce137b = L.circleMarker(
+                [13.0418, 80.2341],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ea96492bfbca67ff700e21e1b337994);
+        
+    
+        var popup_cb5d7229c0adb5e6dbe539aa44d8d95e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_85afa135648f0c3ea9f51ea7509a3f20 = $(`<div id="html_85afa135648f0c3ea9f51ea7509a3f20" style="width: 100.0%; height: 100.0%;">             <b>Route:</b> Nungambakkam to T.Nagar<br>             <b>Type:</b> end<br>             <b>Delay:</b> 21.2 min<br>             <b>Confidence:</b> 1.00<br>             <b>Description:</b> Anomalous delivery delay detected: 21.2 minutes             </div>`)[0];
+                popup_cb5d7229c0adb5e6dbe539aa44d8d95e.setContent(html_85afa135648f0c3ea9f51ea7509a3f20);
+            
+        
+
+        circle_marker_cc844705d4c53e685e33369246ce137b.bindPopup(popup_cb5d7229c0adb5e6dbe539aa44d8d95e)
+        ;
+
+        
+    
+    
+            var circle_marker_2eee0485e2c60605111b70be58064094 = L.circleMarker(
+                [13.0569, 80.2412],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ea96492bfbca67ff700e21e1b337994);
+        
+    
+        var popup_8fea97665634309995c8b17f37cab22c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3ed370b61f32449eb8d613f2d38939f7 = $(`<div id="html_3ed370b61f32449eb8d613f2d38939f7" style="width: 100.0%; height: 100.0%;">             <b>Route:</b> Nungambakkam to T.Nagar<br>             <b>Type:</b> start<br>             <b>Delay:</b> 19.6 min<br>             <b>Confidence:</b> 1.00<br>             <b>Description:</b> Anomalous delivery delay detected: 19.6 minutes             </div>`)[0];
+                popup_8fea97665634309995c8b17f37cab22c.setContent(html_3ed370b61f32449eb8d613f2d38939f7);
+            
+        
+
+        circle_marker_2eee0485e2c60605111b70be58064094.bindPopup(popup_8fea97665634309995c8b17f37cab22c)
+        ;
+
+        
+    
+    
+            var circle_marker_64d073c0c6983f71d1caba92ed0ae6c0 = L.circleMarker(
+                [13.0418, 80.2341],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ea96492bfbca67ff700e21e1b337994);
+        
+    
+        var popup_f557debb61b0258cf736b84e5acd8f20 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_24a259577a6959a81259f3b0b18b78c3 = $(`<div id="html_24a259577a6959a81259f3b0b18b78c3" style="width: 100.0%; height: 100.0%;">             <b>Route:</b> Nungambakkam to T.Nagar<br>             <b>Type:</b> end<br>             <b>Delay:</b> 19.6 min<br>             <b>Confidence:</b> 1.00<br>             <b>Description:</b> Anomalous delivery delay detected: 19.6 minutes             </div>`)[0];
+                popup_f557debb61b0258cf736b84e5acd8f20.setContent(html_24a259577a6959a81259f3b0b18b78c3);
+            
+        
+
+        circle_marker_64d073c0c6983f71d1caba92ed0ae6c0.bindPopup(popup_f557debb61b0258cf736b84e5acd8f20)
+        ;
+
+        
+    
+    
+            var circle_marker_3ec517c85ee00a7e09be97bba2b64518 = L.circleMarker(
+                [13.0569, 80.2412],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ea96492bfbca67ff700e21e1b337994);
+        
+    
+        var popup_fb279fd42bbd83ca31846d1f50ff94ca = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_73c5f92e369480bbd56590ec6d54c53b = $(`<div id="html_73c5f92e369480bbd56590ec6d54c53b" style="width: 100.0%; height: 100.0%;">             <b>Route:</b> Nungambakkam to T.Nagar<br>             <b>Type:</b> start<br>             <b>Delay:</b> 21.8 min<br>             <b>Confidence:</b> 1.00<br>             <b>Description:</b> Anomalous delivery delay detected: 21.8 minutes             </div>`)[0];
+                popup_fb279fd42bbd83ca31846d1f50ff94ca.setContent(html_73c5f92e369480bbd56590ec6d54c53b);
+            
+        
+
+        circle_marker_3ec517c85ee00a7e09be97bba2b64518.bindPopup(popup_fb279fd42bbd83ca31846d1f50ff94ca)
+        ;
+
+        
+    
+    
+            var circle_marker_abe98470bdf13489522f467e91de63ed = L.circleMarker(
+                [13.0418, 80.2341],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ea96492bfbca67ff700e21e1b337994);
+        
+    
+        var popup_be0f9aa831fee062e8b92d8b9619d3fd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_263e7ccd9308c4dadea002dd8d9ac5ac = $(`<div id="html_263e7ccd9308c4dadea002dd8d9ac5ac" style="width: 100.0%; height: 100.0%;">             <b>Route:</b> Nungambakkam to T.Nagar<br>             <b>Type:</b> end<br>             <b>Delay:</b> 21.8 min<br>             <b>Confidence:</b> 1.00<br>             <b>Description:</b> Anomalous delivery delay detected: 21.8 minutes             </div>`)[0];
+                popup_be0f9aa831fee062e8b92d8b9619d3fd.setContent(html_263e7ccd9308c4dadea002dd8d9ac5ac);
+            
+        
+
+        circle_marker_abe98470bdf13489522f467e91de63ed.bindPopup(popup_be0f9aa831fee062e8b92d8b9619d3fd)
+        ;
+
+        
+    
+    
+            var circle_marker_5cdb1c012fd02bf14d174bb6567086e8 = L.circleMarker(
+                [13.0569, 80.2412],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ea96492bfbca67ff700e21e1b337994);
+        
+    
+        var popup_ec901ea3fe771b043574d7a57936eb91 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a5e30d197d174aa22aa08fe3db333f1a = $(`<div id="html_a5e30d197d174aa22aa08fe3db333f1a" style="width: 100.0%; height: 100.0%;">             <b>Route:</b> Nungambakkam to T.Nagar<br>             <b>Type:</b> start<br>             <b>Delay:</b> 9.6 min<br>             <b>Confidence:</b> 0.75<br>             <b>Description:</b> Anomalous delivery delay detected: 9.6 minutes             </div>`)[0];
+                popup_ec901ea3fe771b043574d7a57936eb91.setContent(html_a5e30d197d174aa22aa08fe3db333f1a);
+            
+        
+
+        circle_marker_5cdb1c012fd02bf14d174bb6567086e8.bindPopup(popup_ec901ea3fe771b043574d7a57936eb91)
+        ;
+
+        
+    
+    
+            var circle_marker_c89259ea3ff068b0ba24bdc0faefe374 = L.circleMarker(
+                [13.0418, 80.2341],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ea96492bfbca67ff700e21e1b337994);
+        
+    
+        var popup_49f415397512bdcc67c5b7cf050f3883 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_edd4441c2349bb87b8d9c5541f40d14a = $(`<div id="html_edd4441c2349bb87b8d9c5541f40d14a" style="width: 100.0%; height: 100.0%;">             <b>Route:</b> Nungambakkam to T.Nagar<br>             <b>Type:</b> end<br>             <b>Delay:</b> 9.6 min<br>             <b>Confidence:</b> 0.75<br>             <b>Description:</b> Anomalous delivery delay detected: 9.6 minutes             </div>`)[0];
+                popup_49f415397512bdcc67c5b7cf050f3883.setContent(html_edd4441c2349bb87b8d9c5541f40d14a);
+            
+        
+
+        circle_marker_c89259ea3ff068b0ba24bdc0faefe374.bindPopup(popup_49f415397512bdcc67c5b7cf050f3883)
+        ;
+
+        
+    
+    
+            var circle_marker_3b9f6ba01d95bb3b614b2de2b767c95d = L.circleMarker(
+                [13.0569, 80.2412],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ea96492bfbca67ff700e21e1b337994);
+        
+    
+        var popup_1bd017dfc48219e50ccb4269f465d616 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_72223c437e112defd3c9ba9ae0cfbc1b = $(`<div id="html_72223c437e112defd3c9ba9ae0cfbc1b" style="width: 100.0%; height: 100.0%;">             <b>Route:</b> Nungambakkam to T.Nagar<br>             <b>Type:</b> start<br>             <b>Delay:</b> 19.3 min<br>             <b>Confidence:</b> 1.00<br>             <b>Description:</b> Anomalous delivery delay detected: 19.3 minutes             </div>`)[0];
+                popup_1bd017dfc48219e50ccb4269f465d616.setContent(html_72223c437e112defd3c9ba9ae0cfbc1b);
+            
+        
+
+        circle_marker_3b9f6ba01d95bb3b614b2de2b767c95d.bindPopup(popup_1bd017dfc48219e50ccb4269f465d616)
+        ;
+
+        
+    
+    
+            var circle_marker_748cc7836d7406568a0a97033989943b = L.circleMarker(
+                [13.0418, 80.2341],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ea96492bfbca67ff700e21e1b337994);
+        
+    
+        var popup_3262142ea02900cd0c967f4c511f3996 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bcbb8f6eee7a98b0fa31773c4d187de1 = $(`<div id="html_bcbb8f6eee7a98b0fa31773c4d187de1" style="width: 100.0%; height: 100.0%;">             <b>Route:</b> Nungambakkam to T.Nagar<br>             <b>Type:</b> end<br>             <b>Delay:</b> 19.3 min<br>             <b>Confidence:</b> 1.00<br>             <b>Description:</b> Anomalous delivery delay detected: 19.3 minutes             </div>`)[0];
+                popup_3262142ea02900cd0c967f4c511f3996.setContent(html_bcbb8f6eee7a98b0fa31773c4d187de1);
+            
+        
+
+        circle_marker_748cc7836d7406568a0a97033989943b.bindPopup(popup_3262142ea02900cd0c967f4c511f3996)
+        ;
+
+        
+    
+    
+            var circle_marker_a5bd9eba31e6ee1e6343ea3df7eea1b9 = L.circleMarker(
+                [13.0569, 80.2412],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ea96492bfbca67ff700e21e1b337994);
+        
+    
+        var popup_6d58b0a9fb30412c5429b31847d84f4d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4ba3b8b17dde095e085a12883f03a1ab = $(`<div id="html_4ba3b8b17dde095e085a12883f03a1ab" style="width: 100.0%; height: 100.0%;">             <b>Route:</b> Nungambakkam to T.Nagar<br>             <b>Type:</b> start<br>             <b>Delay:</b> 17.2 min<br>             <b>Confidence:</b> 1.00<br>             <b>Description:</b> Anomalous delivery delay detected: 17.2 minutes             </div>`)[0];
+                popup_6d58b0a9fb30412c5429b31847d84f4d.setContent(html_4ba3b8b17dde095e085a12883f03a1ab);
+            
+        
+
+        circle_marker_a5bd9eba31e6ee1e6343ea3df7eea1b9.bindPopup(popup_6d58b0a9fb30412c5429b31847d84f4d)
+        ;
+
+        
+    
+    
+            var circle_marker_38280f4ab3fbc22cb16f0f0c2a7a7275 = L.circleMarker(
+                [13.0418, 80.2341],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ea96492bfbca67ff700e21e1b337994);
+        
+    
+        var popup_7f9d60ac8cdcf97fb6df0749e85d8484 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9e75f2aaeaea7e6fe258f92ca184b590 = $(`<div id="html_9e75f2aaeaea7e6fe258f92ca184b590" style="width: 100.0%; height: 100.0%;">             <b>Route:</b> Nungambakkam to T.Nagar<br>             <b>Type:</b> end<br>             <b>Delay:</b> 17.2 min<br>             <b>Confidence:</b> 1.00<br>             <b>Description:</b> Anomalous delivery delay detected: 17.2 minutes             </div>`)[0];
+                popup_7f9d60ac8cdcf97fb6df0749e85d8484.setContent(html_9e75f2aaeaea7e6fe258f92ca184b590);
+            
+        
+
+        circle_marker_38280f4ab3fbc22cb16f0f0c2a7a7275.bindPopup(popup_7f9d60ac8cdcf97fb6df0749e85d8484)
+        ;
+
+        
+    
+    
+            var circle_marker_7cf82548c9014dadf839903c67c50a72 = L.circleMarker(
+                [13.0569, 80.2412],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ea96492bfbca67ff700e21e1b337994);
+        
+    
+        var popup_0429e4a51bf314dddda7b9453f410f10 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7dd4dc9c82d99b72a96efa44549bd797 = $(`<div id="html_7dd4dc9c82d99b72a96efa44549bd797" style="width: 100.0%; height: 100.0%;">             <b>Route:</b> Nungambakkam to T.Nagar<br>             <b>Type:</b> start<br>             <b>Delay:</b> 22.7 min<br>             <b>Confidence:</b> 1.00<br>             <b>Description:</b> Anomalous delivery delay detected: 22.7 minutes             </div>`)[0];
+                popup_0429e4a51bf314dddda7b9453f410f10.setContent(html_7dd4dc9c82d99b72a96efa44549bd797);
+            
+        
+
+        circle_marker_7cf82548c9014dadf839903c67c50a72.bindPopup(popup_0429e4a51bf314dddda7b9453f410f10)
+        ;
+
+        
+    
+    
+            var circle_marker_479d3e4095f9288084e2e32e25151f3e = L.circleMarker(
+                [13.0418, 80.2341],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ea96492bfbca67ff700e21e1b337994);
+        
+    
+        var popup_8c323e26288989de45b62799b37f63d0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ee96388d4c027e0ba5540dbf61c985d0 = $(`<div id="html_ee96388d4c027e0ba5540dbf61c985d0" style="width: 100.0%; height: 100.0%;">             <b>Route:</b> Nungambakkam to T.Nagar<br>             <b>Type:</b> end<br>             <b>Delay:</b> 22.7 min<br>             <b>Confidence:</b> 1.00<br>             <b>Description:</b> Anomalous delivery delay detected: 22.7 minutes             </div>`)[0];
+                popup_8c323e26288989de45b62799b37f63d0.setContent(html_ee96388d4c027e0ba5540dbf61c985d0);
+            
+        
+
+        circle_marker_479d3e4095f9288084e2e32e25151f3e.bindPopup(popup_8c323e26288989de45b62799b37f63d0)
+        ;
+
+        
+    
+    
+            var circle_marker_9a12b0852a674338634901eab7492f48 = L.circleMarker(
+                [13.0569, 80.2412],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ea96492bfbca67ff700e21e1b337994);
+        
+    
+        var popup_29fa7521d4e24afa566f4d9964383dbe = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4d1a06d9d4c714ca9d3e8de1b3e1b08c = $(`<div id="html_4d1a06d9d4c714ca9d3e8de1b3e1b08c" style="width: 100.0%; height: 100.0%;">             <b>Route:</b> Nungambakkam to T.Nagar<br>             <b>Type:</b> start<br>             <b>Delay:</b> 18.9 min<br>             <b>Confidence:</b> 0.75<br>             <b>Description:</b> Anomalous delivery delay detected: 18.9 minutes             </div>`)[0];
+                popup_29fa7521d4e24afa566f4d9964383dbe.setContent(html_4d1a06d9d4c714ca9d3e8de1b3e1b08c);
+            
+        
+
+        circle_marker_9a12b0852a674338634901eab7492f48.bindPopup(popup_29fa7521d4e24afa566f4d9964383dbe)
+        ;
+
+        
+    
+    
+            var circle_marker_911d2d68748d961ed8d69f423a40dfe9 = L.circleMarker(
+                [13.0418, 80.2341],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ea96492bfbca67ff700e21e1b337994);
+        
+    
+        var popup_a72365be1e284887e42c148cd8c80aba = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fe9278da3e7a5db45ed0e71ee86e0b46 = $(`<div id="html_fe9278da3e7a5db45ed0e71ee86e0b46" style="width: 100.0%; height: 100.0%;">             <b>Route:</b> Nungambakkam to T.Nagar<br>             <b>Type:</b> end<br>             <b>Delay:</b> 18.9 min<br>             <b>Confidence:</b> 0.75<br>             <b>Description:</b> Anomalous delivery delay detected: 18.9 minutes             </div>`)[0];
+                popup_a72365be1e284887e42c148cd8c80aba.setContent(html_fe9278da3e7a5db45ed0e71ee86e0b46);
+            
+        
+
+        circle_marker_911d2d68748d961ed8d69f423a40dfe9.bindPopup(popup_a72365be1e284887e42c148cd8c80aba)
+        ;
+
+        
+    
+    
+            var circle_marker_573cf632bef2ae684fd653cff9a09cfc = L.circleMarker(
+                [13.0569, 80.2412],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ea96492bfbca67ff700e21e1b337994);
+        
+    
+        var popup_5eeb90a9619084a09ff9a01c69bdd924 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_74a421b72b3fc1ba6f12c68a36911c79 = $(`<div id="html_74a421b72b3fc1ba6f12c68a36911c79" style="width: 100.0%; height: 100.0%;">             <b>Route:</b> Nungambakkam to T.Nagar<br>             <b>Type:</b> start<br>             <b>Delay:</b> 22.1 min<br>             <b>Confidence:</b> 0.75<br>             <b>Description:</b> Anomalous delivery delay detected: 22.1 minutes             </div>`)[0];
+                popup_5eeb90a9619084a09ff9a01c69bdd924.setContent(html_74a421b72b3fc1ba6f12c68a36911c79);
+            
+        
+
+        circle_marker_573cf632bef2ae684fd653cff9a09cfc.bindPopup(popup_5eeb90a9619084a09ff9a01c69bdd924)
+        ;
+
+        
+    
+    
+            var circle_marker_5e8cdc32014000992f31fbaac6150703 = L.circleMarker(
+                [13.0418, 80.2341],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ea96492bfbca67ff700e21e1b337994);
+        
+    
+        var popup_fdd78b3e877e683561ca444227b528cc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7d98894653a038f31020d51a07eff7d6 = $(`<div id="html_7d98894653a038f31020d51a07eff7d6" style="width: 100.0%; height: 100.0%;">             <b>Route:</b> Nungambakkam to T.Nagar<br>             <b>Type:</b> end<br>             <b>Delay:</b> 22.1 min<br>             <b>Confidence:</b> 0.75<br>             <b>Description:</b> Anomalous delivery delay detected: 22.1 minutes             </div>`)[0];
+                popup_fdd78b3e877e683561ca444227b528cc.setContent(html_7d98894653a038f31020d51a07eff7d6);
+            
+        
+
+        circle_marker_5e8cdc32014000992f31fbaac6150703.bindPopup(popup_fdd78b3e877e683561ca444227b528cc)
+        ;
+
+        
+    
+    
+            var circle_marker_d9116e9ff13277f7829e599d983062fa = L.circleMarker(
+                [13.0569, 80.2412],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ea96492bfbca67ff700e21e1b337994);
+        
+    
+        var popup_d569c7d14e2196164816d96c98d3f189 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a3de99387354e93141e8b6020747f3e2 = $(`<div id="html_a3de99387354e93141e8b6020747f3e2" style="width: 100.0%; height: 100.0%;">             <b>Route:</b> Nungambakkam to T.Nagar<br>             <b>Type:</b> start<br>             <b>Delay:</b> 8.1 min<br>             <b>Confidence:</b> 0.50<br>             <b>Description:</b> Anomalous delivery delay detected: 8.1 minutes             </div>`)[0];
+                popup_d569c7d14e2196164816d96c98d3f189.setContent(html_a3de99387354e93141e8b6020747f3e2);
+            
+        
+
+        circle_marker_d9116e9ff13277f7829e599d983062fa.bindPopup(popup_d569c7d14e2196164816d96c98d3f189)
+        ;
+
+        
+    
+    
+            var circle_marker_a5192f699bb55f3e0f641560dd9abae5 = L.circleMarker(
+                [13.0418, 80.2341],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ea96492bfbca67ff700e21e1b337994);
+        
+    
+        var popup_4ee925ff73459dd1bae6b415a4afc4fa = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0633bbce17a617e44d69532d3bcc2c46 = $(`<div id="html_0633bbce17a617e44d69532d3bcc2c46" style="width: 100.0%; height: 100.0%;">             <b>Route:</b> Nungambakkam to T.Nagar<br>             <b>Type:</b> end<br>             <b>Delay:</b> 8.1 min<br>             <b>Confidence:</b> 0.50<br>             <b>Description:</b> Anomalous delivery delay detected: 8.1 minutes             </div>`)[0];
+                popup_4ee925ff73459dd1bae6b415a4afc4fa.setContent(html_0633bbce17a617e44d69532d3bcc2c46);
+            
+        
+
+        circle_marker_a5192f699bb55f3e0f641560dd9abae5.bindPopup(popup_4ee925ff73459dd1bae6b415a4afc4fa)
+        ;
+
+        
+    
+    
+            var circle_marker_00e064cecc85127c99380eea643ec69e = L.circleMarker(
+                [13.0569, 80.2412],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ea96492bfbca67ff700e21e1b337994);
+        
+    
+        var popup_9ab614497a4929568ea5063eeeb1663c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9a5891b7af719a0abce94d8f025e683f = $(`<div id="html_9a5891b7af719a0abce94d8f025e683f" style="width: 100.0%; height: 100.0%;">             <b>Route:</b> Nungambakkam to T.Nagar<br>             <b>Type:</b> start<br>             <b>Delay:</b> 20.4 min<br>             <b>Confidence:</b> 0.75<br>             <b>Description:</b> Anomalous delivery delay detected: 20.4 minutes             </div>`)[0];
+                popup_9ab614497a4929568ea5063eeeb1663c.setContent(html_9a5891b7af719a0abce94d8f025e683f);
+            
+        
+
+        circle_marker_00e064cecc85127c99380eea643ec69e.bindPopup(popup_9ab614497a4929568ea5063eeeb1663c)
+        ;
+
+        
+    
+    
+            var circle_marker_596002cccd5cb2a398fc5f089c0be8ee = L.circleMarker(
+                [13.0418, 80.2341],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ea96492bfbca67ff700e21e1b337994);
+        
+    
+        var popup_ffb00cd7e3cf5c5c216c04d042be2ad1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_237f9ab82c94f0b745e0bdc8d99b3554 = $(`<div id="html_237f9ab82c94f0b745e0bdc8d99b3554" style="width: 100.0%; height: 100.0%;">             <b>Route:</b> Nungambakkam to T.Nagar<br>             <b>Type:</b> end<br>             <b>Delay:</b> 20.4 min<br>             <b>Confidence:</b> 0.75<br>             <b>Description:</b> Anomalous delivery delay detected: 20.4 minutes             </div>`)[0];
+                popup_ffb00cd7e3cf5c5c216c04d042be2ad1.setContent(html_237f9ab82c94f0b745e0bdc8d99b3554);
+            
+        
+
+        circle_marker_596002cccd5cb2a398fc5f089c0be8ee.bindPopup(popup_ffb00cd7e3cf5c5c216c04d042be2ad1)
+        ;
+
+        
+    
+    
+            marker_cluster_7ea96492bfbca67ff700e21e1b337994.addTo(map_5198f312aaa6793d154198d9dfe4ca1c);
+        
+</script>
+</html>

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_58a1cd3e33312924bc8f27c130342372 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_58a1cd3e33312924bc8f27c130342372" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_58a1cd3e33312924bc8f27c130342372 = L.map(
+                "map_58a1cd3e33312924bc8f27c130342372",
+                {
+                    center: [13.0827, 80.2707],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_657daa6834043cb7692fca44e7c52d7a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_657daa6834043cb7692fca44e7c52d7a.addTo(map_58a1cd3e33312924bc8f27c130342372);
+        
+    
+            var marker_cluster_bc1be4cb1c5543dca3a1981548e3242f = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var circle_marker_e9b107e132c8d67437f8d318e56638f4 = L.circleMarker(
+                [12.8228, 80.23835],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_bc1be4cb1c5543dca3a1981548e3242f);
+        
+    
+        var popup_ef5017a89006300a5a31beadda8f5e2c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f2cb918ee4f34f2b368153f6367256c5 = $(`<div id="html_f2cb918ee4f34f2b368153f6367256c5" style="width: 100.0%; height: 100.0%;">             <b>Road:</b> Old Mahabalipuram Road<br>             <b>Speed:</b> 19.7 km/h<br>             <b>Alert:</b> Warning<br>             <b>Description:</b> Predicted slow traffic on Old Mahabalipuram Road: 19.7 km/h             </div>`)[0];
+                popup_ef5017a89006300a5a31beadda8f5e2c.setContent(html_f2cb918ee4f34f2b368153f6367256c5);
+            
+        
+
+        circle_marker_e9b107e132c8d67437f8d318e56638f4.bindPopup(popup_ef5017a89006300a5a31beadda8f5e2c)
+        ;
+
+        
+    
+    
+            var circle_marker_01a767257a5d241c1b29213594c7d9ec = L.circleMarker(
+                [12.8228, 80.23835],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_bc1be4cb1c5543dca3a1981548e3242f);
+        
+    
+        var popup_ba89c5436a79e023ac2d6a719ebbe1a6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_10ad6d233aaf272dea04ea86dd66225e = $(`<div id="html_10ad6d233aaf272dea04ea86dd66225e" style="width: 100.0%; height: 100.0%;">             <b>Road:</b> Old Mahabalipuram Road<br>             <b>Speed:</b> 16.8 km/h<br>             <b>Alert:</b> Warning<br>             <b>Description:</b> Predicted slow traffic on Old Mahabalipuram Road: 16.8 km/h             </div>`)[0];
+                popup_ba89c5436a79e023ac2d6a719ebbe1a6.setContent(html_10ad6d233aaf272dea04ea86dd66225e);
+            
+        
+
+        circle_marker_01a767257a5d241c1b29213594c7d9ec.bindPopup(popup_ba89c5436a79e023ac2d6a719ebbe1a6)
+        ;
+
+        
+    
+    
+            var circle_marker_0a20226c6981e5c4c4367ebabf510a5c = L.circleMarker(
+                [12.8228, 80.23835],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_bc1be4cb1c5543dca3a1981548e3242f);
+        
+    
+        var popup_fb2f71c969e41582457182a1e489ec96 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b5bb8ad49b8c8c881da3fd1cb323365a = $(`<div id="html_b5bb8ad49b8c8c881da3fd1cb323365a" style="width: 100.0%; height: 100.0%;">             <b>Road:</b> Old Mahabalipuram Road<br>             <b>Speed:</b> 18.5 km/h<br>             <b>Alert:</b> Warning<br>             <b>Description:</b> Predicted slow traffic on Old Mahabalipuram Road: 18.5 km/h             </div>`)[0];
+                popup_fb2f71c969e41582457182a1e489ec96.setContent(html_b5bb8ad49b8c8c881da3fd1cb323365a);
+            
+        
+
+        circle_marker_0a20226c6981e5c4c4367ebabf510a5c.bindPopup(popup_fb2f71c969e41582457182a1e489ec96)
+        ;
+
+        
+    
+    
+            var circle_marker_ed2edc84920dd82301224b77595a19b7 = L.circleMarker(
+                [12.7635, 80.271],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_bc1be4cb1c5543dca3a1981548e3242f);
+        
+    
+        var popup_bda6084a320a77458052e6b5271d01af = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8cc0d2f1f35c3f258316324c18a33898 = $(`<div id="html_8cc0d2f1f35c3f258316324c18a33898" style="width: 100.0%; height: 100.0%;">             <b>Road:</b> East Coast Road<br>             <b>Speed:</b> 19.7 km/h<br>             <b>Alert:</b> Warning<br>             <b>Description:</b> Predicted slow traffic on East Coast Road: 19.7 km/h             </div>`)[0];
+                popup_bda6084a320a77458052e6b5271d01af.setContent(html_8cc0d2f1f35c3f258316324c18a33898);
+            
+        
+
+        circle_marker_ed2edc84920dd82301224b77595a19b7.bindPopup(popup_bda6084a320a77458052e6b5271d01af)
+        ;
+
+        
+    
+    
+            var circle_marker_5dfa02ba1625f96ad60d9b328806130e = L.circleMarker(
+                [12.7635, 80.271],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_bc1be4cb1c5543dca3a1981548e3242f);
+        
+    
+        var popup_c09cf6a6c563c93ec5cccc851d28fdd1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d6981d6e9e348ad3d5302bbe7d780979 = $(`<div id="html_d6981d6e9e348ad3d5302bbe7d780979" style="width: 100.0%; height: 100.0%;">             <b>Road:</b> East Coast Road<br>             <b>Speed:</b> 16.8 km/h<br>             <b>Alert:</b> Warning<br>             <b>Description:</b> Predicted slow traffic on East Coast Road: 16.8 km/h             </div>`)[0];
+                popup_c09cf6a6c563c93ec5cccc851d28fdd1.setContent(html_d6981d6e9e348ad3d5302bbe7d780979);
+            
+        
+
+        circle_marker_5dfa02ba1625f96ad60d9b328806130e.bindPopup(popup_c09cf6a6c563c93ec5cccc851d28fdd1)
+        ;
+
+        
+    
+    
+            var circle_marker_52c8c95fd6aae30bda9d24e52aa2314e = L.circleMarker(
+                [12.7635, 80.271],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_bc1be4cb1c5543dca3a1981548e3242f);
+        
+    
+        var popup_b87d261b4f835f7d5a82691195e95a6c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a12eb7cece72a87d36b310d2c8817dae = $(`<div id="html_a12eb7cece72a87d36b310d2c8817dae" style="width: 100.0%; height: 100.0%;">             <b>Road:</b> East Coast Road<br>             <b>Speed:</b> 18.5 km/h<br>             <b>Alert:</b> Warning<br>             <b>Description:</b> Predicted slow traffic on East Coast Road: 18.5 km/h             </div>`)[0];
+                popup_b87d261b4f835f7d5a82691195e95a6c.setContent(html_a12eb7cece72a87d36b310d2c8817dae);
+            
+        
+
+        circle_marker_52c8c95fd6aae30bda9d24e52aa2314e.bindPopup(popup_b87d261b4f835f7d5a82691195e95a6c)
+        ;
+
+        
+    
+    
+            var circle_marker_272257874f3018663764a50e6975406f = L.circleMarker(
+                [12.88325, 80.11574999999999],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_bc1be4cb1c5543dca3a1981548e3242f);
+        
+    
+        var popup_7241a1bdc7131b01276358ff4c5cd995 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8089cf6b05e041595a8161db0ee65587 = $(`<div id="html_8089cf6b05e041595a8161db0ee65587" style="width: 100.0%; height: 100.0%;">             <b>Road:</b> GST Road<br>             <b>Speed:</b> 19.7 km/h<br>             <b>Alert:</b> Warning<br>             <b>Description:</b> Predicted slow traffic on GST Road: 19.7 km/h             </div>`)[0];
+                popup_7241a1bdc7131b01276358ff4c5cd995.setContent(html_8089cf6b05e041595a8161db0ee65587);
+            
+        
+
+        circle_marker_272257874f3018663764a50e6975406f.bindPopup(popup_7241a1bdc7131b01276358ff4c5cd995)
+        ;
+
+        
+    
+    
+            var circle_marker_39c3cf3d5a80263b142bba4f3d10f34e = L.circleMarker(
+                [12.88325, 80.11574999999999],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_bc1be4cb1c5543dca3a1981548e3242f);
+        
+    
+        var popup_a5516012eba200d6e1c5b7bebb4b8d3f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d63e11634976885586b529cd71ae6f00 = $(`<div id="html_d63e11634976885586b529cd71ae6f00" style="width: 100.0%; height: 100.0%;">             <b>Road:</b> GST Road<br>             <b>Speed:</b> 16.8 km/h<br>             <b>Alert:</b> Warning<br>             <b>Description:</b> Predicted slow traffic on GST Road: 16.8 km/h             </div>`)[0];
+                popup_a5516012eba200d6e1c5b7bebb4b8d3f.setContent(html_d63e11634976885586b529cd71ae6f00);
+            
+        
+
+        circle_marker_39c3cf3d5a80263b142bba4f3d10f34e.bindPopup(popup_a5516012eba200d6e1c5b7bebb4b8d3f)
+        ;
+
+        
+    
+    
+            var circle_marker_7b7cdb4923124e5fa9c5c34ea6b27f6b = L.circleMarker(
+                [12.88325, 80.11574999999999],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_bc1be4cb1c5543dca3a1981548e3242f);
+        
+    
+        var popup_9202702bb846772bb6d003072e6eb312 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5b9725e169f63c401cdb9a2da916133e = $(`<div id="html_5b9725e169f63c401cdb9a2da916133e" style="width: 100.0%; height: 100.0%;">             <b>Road:</b> GST Road<br>             <b>Speed:</b> 18.5 km/h<br>             <b>Alert:</b> Warning<br>             <b>Description:</b> Predicted slow traffic on GST Road: 18.5 km/h             </div>`)[0];
+                popup_9202702bb846772bb6d003072e6eb312.setContent(html_5b9725e169f63c401cdb9a2da916133e);
+            
+        
+
+        circle_marker_7b7cdb4923124e5fa9c5c34ea6b27f6b.bindPopup(popup_9202702bb846772bb6d003072e6eb312)
+        ;
+
+        
+    
+    
+            var circle_marker_24955280960300200bbf7db6cc236147 = L.circleMarker(
+                [13.038450000000001, 80.2506],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_bc1be4cb1c5543dca3a1981548e3242f);
+        
+    
+        var popup_7c6af269bc54beb317e76ff75c60c966 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c062970d3f9d928101732aca512c5ca2 = $(`<div id="html_c062970d3f9d928101732aca512c5ca2" style="width: 100.0%; height: 100.0%;">             <b>Road:</b> Anna Salai<br>             <b>Speed:</b> 19.7 km/h<br>             <b>Alert:</b> Warning<br>             <b>Description:</b> Predicted slow traffic on Anna Salai: 19.7 km/h             </div>`)[0];
+                popup_7c6af269bc54beb317e76ff75c60c966.setContent(html_c062970d3f9d928101732aca512c5ca2);
+            
+        
+
+        circle_marker_24955280960300200bbf7db6cc236147.bindPopup(popup_7c6af269bc54beb317e76ff75c60c966)
+        ;
+
+        
+    
+    
+            var circle_marker_6607d9893b086aaf4d03714ee273ad17 = L.circleMarker(
+                [13.038450000000001, 80.2506],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_bc1be4cb1c5543dca3a1981548e3242f);
+        
+    
+        var popup_04bf19c9c04f01a54f143dd3144bdeaa = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0dadb4affc493c95312b6fd3b9bf2d5a = $(`<div id="html_0dadb4affc493c95312b6fd3b9bf2d5a" style="width: 100.0%; height: 100.0%;">             <b>Road:</b> Anna Salai<br>             <b>Speed:</b> 16.8 km/h<br>             <b>Alert:</b> Warning<br>             <b>Description:</b> Predicted slow traffic on Anna Salai: 16.8 km/h             </div>`)[0];
+                popup_04bf19c9c04f01a54f143dd3144bdeaa.setContent(html_0dadb4affc493c95312b6fd3b9bf2d5a);
+            
+        
+
+        circle_marker_6607d9893b086aaf4d03714ee273ad17.bindPopup(popup_04bf19c9c04f01a54f143dd3144bdeaa)
+        ;
+
+        
+    
+    
+            var circle_marker_88007301bf6fab717b582c65ca66bb59 = L.circleMarker(
+                [13.038450000000001, 80.2506],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_bc1be4cb1c5543dca3a1981548e3242f);
+        
+    
+        var popup_e71f8cc5c08b195414e5c4369d399ea9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_85b7673f7dbe28616dbede6c9e4ce60b = $(`<div id="html_85b7673f7dbe28616dbede6c9e4ce60b" style="width: 100.0%; height: 100.0%;">             <b>Road:</b> Anna Salai<br>             <b>Speed:</b> 18.5 km/h<br>             <b>Alert:</b> Warning<br>             <b>Description:</b> Predicted slow traffic on Anna Salai: 18.5 km/h             </div>`)[0];
+                popup_e71f8cc5c08b195414e5c4369d399ea9.setContent(html_85b7673f7dbe28616dbede6c9e4ce60b);
+            
+        
+
+        circle_marker_88007301bf6fab717b582c65ca66bb59.bindPopup(popup_e71f8cc5c08b195414e5c4369d399ea9)
+        ;
+
+        
+    
+    
+            var circle_marker_e205c354ab6e98099445f9c670f27c41 = L.circleMarker(
+                [13.084900000000001, 80.17235],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_bc1be4cb1c5543dca3a1981548e3242f);
+        
+    
+        var popup_25c7f272ead202a7724ee105ecc600a7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ef63ce219a3a9371ba39c0ffab558d2a = $(`<div id="html_ef63ce219a3a9371ba39c0ffab558d2a" style="width: 100.0%; height: 100.0%;">             <b>Road:</b> Poonamallee High Road<br>             <b>Speed:</b> 19.7 km/h<br>             <b>Alert:</b> Warning<br>             <b>Description:</b> Predicted slow traffic on Poonamallee High Road: 19.7 km/h             </div>`)[0];
+                popup_25c7f272ead202a7724ee105ecc600a7.setContent(html_ef63ce219a3a9371ba39c0ffab558d2a);
+            
+        
+
+        circle_marker_e205c354ab6e98099445f9c670f27c41.bindPopup(popup_25c7f272ead202a7724ee105ecc600a7)
+        ;
+
+        
+    
+    
+            var circle_marker_c79e7a881546e268d9789ca37954e2e3 = L.circleMarker(
+                [13.084900000000001, 80.17235],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_bc1be4cb1c5543dca3a1981548e3242f);
+        
+    
+        var popup_0d82d473c1d9cf759e1784b570927850 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_75cfc73972acd77515a3e401cec5944c = $(`<div id="html_75cfc73972acd77515a3e401cec5944c" style="width: 100.0%; height: 100.0%;">             <b>Road:</b> Poonamallee High Road<br>             <b>Speed:</b> 16.8 km/h<br>             <b>Alert:</b> Warning<br>             <b>Description:</b> Predicted slow traffic on Poonamallee High Road: 16.8 km/h             </div>`)[0];
+                popup_0d82d473c1d9cf759e1784b570927850.setContent(html_75cfc73972acd77515a3e401cec5944c);
+            
+        
+
+        circle_marker_c79e7a881546e268d9789ca37954e2e3.bindPopup(popup_0d82d473c1d9cf759e1784b570927850)
+        ;
+
+        
+    
+    
+            var circle_marker_262366d8298f7971deb340a78b4c62ef = L.circleMarker(
+                [13.084900000000001, 80.17235],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_bc1be4cb1c5543dca3a1981548e3242f);
+        
+    
+        var popup_0c6e0c30b2c2e4a803c373af5b610aa8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2a696a42833e9de7f7154f1590500002 = $(`<div id="html_2a696a42833e9de7f7154f1590500002" style="width: 100.0%; height: 100.0%;">             <b>Road:</b> Poonamallee High Road<br>             <b>Speed:</b> 18.5 km/h<br>             <b>Alert:</b> Warning<br>             <b>Description:</b> Predicted slow traffic on Poonamallee High Road: 18.5 km/h             </div>`)[0];
+                popup_0c6e0c30b2c2e4a803c373af5b610aa8.setContent(html_2a696a42833e9de7f7154f1590500002);
+            
+        
+
+        circle_marker_262366d8298f7971deb340a78b4c62ef.bindPopup(popup_0c6e0c30b2c2e4a803c373af5b610aa8)
+        ;
+
+        
+    
+    
+            var circle_marker_de039101e5210894fb6600d4b24d7d47 = L.circleMarker(
+                [12.9658, 80.21045000000001],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_bc1be4cb1c5543dca3a1981548e3242f);
+        
+    
+        var popup_ce869c472df539f096a841be0907de97 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_409fd5ac30601274101e904fc804a26e = $(`<div id="html_409fd5ac30601274101e904fc804a26e" style="width: 100.0%; height: 100.0%;">             <b>Road:</b> Velachery Road<br>             <b>Speed:</b> 19.7 km/h<br>             <b>Alert:</b> Warning<br>             <b>Description:</b> Predicted slow traffic on Velachery Road: 19.7 km/h             </div>`)[0];
+                popup_ce869c472df539f096a841be0907de97.setContent(html_409fd5ac30601274101e904fc804a26e);
+            
+        
+
+        circle_marker_de039101e5210894fb6600d4b24d7d47.bindPopup(popup_ce869c472df539f096a841be0907de97)
+        ;
+
+        
+    
+    
+            var circle_marker_adc49c47489840085d71475bdbc32359 = L.circleMarker(
+                [12.9658, 80.21045000000001],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_bc1be4cb1c5543dca3a1981548e3242f);
+        
+    
+        var popup_98b9607fd245c74f86850f9ba4442bee = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3531d40a1d9dd98db203e31e52ae71d4 = $(`<div id="html_3531d40a1d9dd98db203e31e52ae71d4" style="width: 100.0%; height: 100.0%;">             <b>Road:</b> Velachery Road<br>             <b>Speed:</b> 16.8 km/h<br>             <b>Alert:</b> Warning<br>             <b>Description:</b> Predicted slow traffic on Velachery Road: 16.8 km/h             </div>`)[0];
+                popup_98b9607fd245c74f86850f9ba4442bee.setContent(html_3531d40a1d9dd98db203e31e52ae71d4);
+            
+        
+
+        circle_marker_adc49c47489840085d71475bdbc32359.bindPopup(popup_98b9607fd245c74f86850f9ba4442bee)
+        ;
+
+        
+    
+    
+            var circle_marker_c8895bc7732e4febfb3a7dbcc1dc8950 = L.circleMarker(
+                [12.9658, 80.21045000000001],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_bc1be4cb1c5543dca3a1981548e3242f);
+        
+    
+        var popup_f2e988d0334c1d3e096da2e368905cc8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2d6ef4b4bfc13737b2d8f1f64d676461 = $(`<div id="html_2d6ef4b4bfc13737b2d8f1f64d676461" style="width: 100.0%; height: 100.0%;">             <b>Road:</b> Velachery Road<br>             <b>Speed:</b> 18.5 km/h<br>             <b>Alert:</b> Warning<br>             <b>Description:</b> Predicted slow traffic on Velachery Road: 18.5 km/h             </div>`)[0];
+                popup_f2e988d0334c1d3e096da2e368905cc8.setContent(html_2d6ef4b4bfc13737b2d8f1f64d676461);
+            
+        
+
+        circle_marker_c8895bc7732e4febfb3a7dbcc1dc8950.bindPopup(popup_f2e988d0334c1d3e096da2e368905cc8)
+        ;
+
+        
+    
+    
+            var circle_marker_6ebc7b56eb932453879ae3b788d1dc6a = L.circleMarker(
+                [13.0291, 80.16975],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_bc1be4cb1c5543dca3a1981548e3242f);
+        
+    
+        var popup_b63cafe5a6588bceb6648cdd0c5d6074 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0dd8a7c448a44342ead8f614b745d90b = $(`<div id="html_0dd8a7c448a44342ead8f614b745d90b" style="width: 100.0%; height: 100.0%;">             <b>Road:</b> Sardar Patel Road<br>             <b>Speed:</b> 19.7 km/h<br>             <b>Alert:</b> Warning<br>             <b>Description:</b> Predicted slow traffic on Sardar Patel Road: 19.7 km/h             </div>`)[0];
+                popup_b63cafe5a6588bceb6648cdd0c5d6074.setContent(html_0dd8a7c448a44342ead8f614b745d90b);
+            
+        
+
+        circle_marker_6ebc7b56eb932453879ae3b788d1dc6a.bindPopup(popup_b63cafe5a6588bceb6648cdd0c5d6074)
+        ;
+
+        
+    
+    
+            var circle_marker_400a5e33882ad439fc2601f58860b61b = L.circleMarker(
+                [13.0291, 80.16975],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_bc1be4cb1c5543dca3a1981548e3242f);
+        
+    
+        var popup_08fba13777df5f26c8f52bdc9587f911 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c8640810489a51497af26253b7816039 = $(`<div id="html_c8640810489a51497af26253b7816039" style="width: 100.0%; height: 100.0%;">             <b>Road:</b> Sardar Patel Road<br>             <b>Speed:</b> 16.8 km/h<br>             <b>Alert:</b> Warning<br>             <b>Description:</b> Predicted slow traffic on Sardar Patel Road: 16.8 km/h             </div>`)[0];
+                popup_08fba13777df5f26c8f52bdc9587f911.setContent(html_c8640810489a51497af26253b7816039);
+            
+        
+
+        circle_marker_400a5e33882ad439fc2601f58860b61b.bindPopup(popup_08fba13777df5f26c8f52bdc9587f911)
+        ;
+
+        
+    
+    
+            var circle_marker_6e145af011c7dc0884a12b209461107a = L.circleMarker(
+                [13.0291, 80.16975],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_bc1be4cb1c5543dca3a1981548e3242f);
+        
+    
+        var popup_4f1e9bd99bc3f15235163e5770ee0c4d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_44db60f15420da4ae39e8ed94f88fa26 = $(`<div id="html_44db60f15420da4ae39e8ed94f88fa26" style="width: 100.0%; height: 100.0%;">             <b>Road:</b> Sardar Patel Road<br>             <b>Speed:</b> 18.5 km/h<br>             <b>Alert:</b> Warning<br>             <b>Description:</b> Predicted slow traffic on Sardar Patel Road: 18.5 km/h             </div>`)[0];
+                popup_4f1e9bd99bc3f15235163e5770ee0c4d.setContent(html_44db60f15420da4ae39e8ed94f88fa26);
+            
+        
+
+        circle_marker_6e145af011c7dc0884a12b209461107a.bindPopup(popup_4f1e9bd99bc3f15235163e5770ee0c4d)
+        ;
+
+        
+    
+    
+            var circle_marker_b8df6294b52ced5075c0fc11a13d8968 = L.circleMarker(
+                [13.0412, 80.20115],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_bc1be4cb1c5543dca3a1981548e3242f);
+        
+    
+        var popup_a7f44068b83a566ba72d68b027e4d41b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d9428b8badfa413cb23545f0d015310d = $(`<div id="html_d9428b8badfa413cb23545f0d015310d" style="width: 100.0%; height: 100.0%;">             <b>Road:</b> Arcot Road<br>             <b>Speed:</b> 19.7 km/h<br>             <b>Alert:</b> Warning<br>             <b>Description:</b> Predicted slow traffic on Arcot Road: 19.7 km/h             </div>`)[0];
+                popup_a7f44068b83a566ba72d68b027e4d41b.setContent(html_d9428b8badfa413cb23545f0d015310d);
+            
+        
+
+        circle_marker_b8df6294b52ced5075c0fc11a13d8968.bindPopup(popup_a7f44068b83a566ba72d68b027e4d41b)
+        ;
+
+        
+    
+    
+            var circle_marker_54d05ed15b42e82e56f23a9559a186fc = L.circleMarker(
+                [13.0412, 80.20115],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_bc1be4cb1c5543dca3a1981548e3242f);
+        
+    
+        var popup_6da845f14b0b835b3103e4f9eb33bb84 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9f775177dc53a0371c2e12d5c2a76555 = $(`<div id="html_9f775177dc53a0371c2e12d5c2a76555" style="width: 100.0%; height: 100.0%;">             <b>Road:</b> Arcot Road<br>             <b>Speed:</b> 16.8 km/h<br>             <b>Alert:</b> Warning<br>             <b>Description:</b> Predicted slow traffic on Arcot Road: 16.8 km/h             </div>`)[0];
+                popup_6da845f14b0b835b3103e4f9eb33bb84.setContent(html_9f775177dc53a0371c2e12d5c2a76555);
+            
+        
+
+        circle_marker_54d05ed15b42e82e56f23a9559a186fc.bindPopup(popup_6da845f14b0b835b3103e4f9eb33bb84)
+        ;
+
+        
+    
+    
+            var circle_marker_9a5ed18ef6d6e097a0e06ca5f9805c80 = L.circleMarker(
+                [13.0412, 80.20115],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_bc1be4cb1c5543dca3a1981548e3242f);
+        
+    
+        var popup_3393c80a937f422e2fc4f7fd21ba9b5a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_977f4d3dc271cfc7ac918fdc63a34617 = $(`<div id="html_977f4d3dc271cfc7ac918fdc63a34617" style="width: 100.0%; height: 100.0%;">             <b>Road:</b> Arcot Road<br>             <b>Speed:</b> 18.5 km/h<br>             <b>Alert:</b> Warning<br>             <b>Description:</b> Predicted slow traffic on Arcot Road: 18.5 km/h             </div>`)[0];
+                popup_3393c80a937f422e2fc4f7fd21ba9b5a.setContent(html_977f4d3dc271cfc7ac918fdc63a34617);
+            
+        
+
+        circle_marker_9a5ed18ef6d6e097a0e06ca5f9805c80.bindPopup(popup_3393c80a937f422e2fc4f7fd21ba9b5a)
+        ;
+
+        
+    
+    
+            marker_cluster_bc1be4cb1c5543dca3a1981548e3242f.addTo(map_58a1cd3e33312924bc8f27c130342372);
+        
+</script>
+</html>
